@@ -1,0 +1,19 @@
+*.o
+*.lo
+*.pyc
+*#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
+*.bak
+.svn
+.DS_Store
+
+# emacs.d
+.emacs.d/site-lisp
+
+# Coq
+*.vo
+*.glob
