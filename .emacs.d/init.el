@@ -133,7 +133,7 @@
 (load-file "~/Coq/src/ssreflect-1.5/pg-ssr.el")
 
 ;; Other settings
-t(define-key global-map (kbd "C-c l") 'toggle-truncate-lines)
+(define-key global-map (kbd "C-c l") 'toggle-truncate-lines)
 (define-key global-map (kbd "C-t") 'other-window)
 (size-indication-mode t)
 (setq display-time-day-and-date t)
