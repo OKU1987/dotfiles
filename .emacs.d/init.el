@@ -100,6 +100,12 @@
   (global-undo-tree-mode)
   (setq undo-tree-mode-lighter nil))
 
+;; Point undo
+(when (require 'point-undo nil t)
+  (define-key global-map (kbd "M-[") 'point-undo)
+  (define-key global-map (kbd "M-]") 'point-redo)
+)
+
 ;; Highlight the current line on GDB source buffer
 (defadvice gdb-display-source-buffer
   (after ad-hl-line-source-buffer (buffer) activate)
