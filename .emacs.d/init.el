@@ -124,9 +124,12 @@
 
 (eval-after-load "proof-script" '(progn
   (define-key proof-mode-map "\C-c\C-j" 'proof-goto-point)
-  (holes-mode 0)
   (custom-set-faces '(coq-cheat-face ((t (:background "red")))))
 ))
+
+(add-hook 'coq-mode-hook
+	  '(lambda ()
+	     (holes-mode 0)))
 
 (setq overlay-arrow-string "")
 (custom-set-variables
