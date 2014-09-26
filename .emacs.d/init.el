@@ -105,6 +105,13 @@
   (after ad-hl-line-source-buffer (buffer) activate)
   (with-current-buffer buffer (hl-line-mode 1)))
 
+;; Enable twittering-mode
+(when (require 'epa-file)
+  (epa-file-enable))
+(when (require 'twittering-mode)
+  (setq twittering-use-master-password t)
+)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; proof general
 (load-file "~/src/Proofgeneral-4.2/generic/proof-site.el")
