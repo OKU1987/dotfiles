@@ -106,6 +106,13 @@
   (define-key global-map [f6] 'point-redo)
 )
 
+
+;; Save undo history after closing a buffer
+(when (require 'undohist nil t)
+  (undohist-initialize)
+)
+
+
 ;; Highlight the current line on GDB source buffer
 (defadvice gdb-display-source-buffer
   (after ad-hl-line-source-buffer (buffer) activate)
