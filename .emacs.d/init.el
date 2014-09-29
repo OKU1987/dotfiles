@@ -134,7 +134,7 @@
   (custom-set-faces '(coq-cheat-face ((t (:background "red")))))
 ))
 
-(add-hook 'coq-mode-hook
+(add-hook 'proof-mode-hook
 	  '(lambda ()
 	     (holes-mode 0)))
 
