@@ -138,6 +138,13 @@
 	  '(lambda ()
 	     (holes-mode 0)))
 
+(add-hook 'proof-goals-mode-hook
+	  '(lambda () (linum-mode 0)))
+
+(add-hook 'proof-response-mode-hook
+	  '(lambda () (linum-mode 0)))
+
+
 (setq overlay-arrow-string "")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
