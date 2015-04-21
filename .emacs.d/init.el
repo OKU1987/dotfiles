@@ -163,6 +163,13 @@
 (load-file "~/Coq/src/ssreflect-1.5/pg-ssr.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; agda
+(load-file (let ((coding-system-for-read 'utf-8))
+	     (shell-command-to-string "agda-mode locate")))
+
+(setq auto-mode-alist (append '(("\\.adga$" . agda2-mode)) auto-mode-alist))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; lean
 (require 'package)
 (add-to-list 'package-archives
