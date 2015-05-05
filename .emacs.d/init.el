@@ -113,6 +113,11 @@
 )
 
 
+;; iswitchb-mode
+(iswitchb-mode 1)
+(setq iswitchb-regexp nil)
+
+
 ;; Highlight the current line on GDB source buffer
 (defadvice gdb-display-source-buffer
   (after ad-hl-line-source-buffer (buffer) activate)
