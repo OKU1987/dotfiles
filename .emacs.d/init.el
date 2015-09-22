@@ -141,7 +141,9 @@
 
 (add-hook 'proof-mode-hook
 	  '(lambda ()
-	     (holes-mode 0)))
+	     (holes-mode 0)
+	     (undo-tree-mode t)
+	     ))
 
 (add-hook 'proof-goals-mode-hook
 	  '(lambda () (linum-mode 0)))
