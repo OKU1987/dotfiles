@@ -124,9 +124,9 @@
   (with-current-buffer buffer (hl-line-mode 1)))
 
 ;; Enable twittering-mode
-(when (require 'epa-file)
+(when (require 'epa-file nil t)
   (epa-file-enable))
-(when (require 'twittering-mode)
+(when (require 'twittering-mode nil t)
   (setq twittering-use-master-password t)
 )
 
