@@ -11,4 +11,4 @@ $pdf_mode	= 3; # generates pdf via dvipdfmx
 # This enables Skim to chase the update in PDF automatically.
 $pvc_view_file_via_temporary = 0;
 
-$pdf_previewer = "open -a /Applications/Preview.app";
+$pdf_previewer = "open -ga /Applications/Preview.app";
