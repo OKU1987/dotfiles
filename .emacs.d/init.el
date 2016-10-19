@@ -132,7 +132,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; proof general
-(load-file "~/src/Proofgeneral-4.2/generic/proof-site.el")
+(load-file "/usr/local/Cellar/proof-general/4.4/share/emacs/site-lisp/proof-general/generic/proof-site.el")
 
 (eval-after-load "proof-script" '(progn
   (define-key proof-mode-map "\C-c\C-j" 'proof-goto-point)
