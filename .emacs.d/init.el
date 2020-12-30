@@ -176,6 +176,15 @@
 
 (setq auto-mode-alist (append '(("\\.adga$" . agda2-mode)) auto-mode-alist))
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; cubicaltt
+(autoload 'cubicaltt-mode "cubicaltt" "cubical editing mode" t)
+(setq auto-mode-alist (append auto-mode-alist '(("\\.ctt$" . cubicaltt-mode))))
+
+(load-file "~/haskell/cubicaltt/cubicaltt.el")
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; lean
 (require 'package)
